@@ -37,10 +37,9 @@ export const Header = () => {
           Contact
         </a>
       </div>
-
-      <DropDown/>
-
-      
+      <div className="md:hidden">
+        <DropDown />
+      </div>
     </div>
   );
 };
