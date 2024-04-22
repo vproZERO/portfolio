@@ -18,7 +18,7 @@ export const Footer = () => {
           <h3 className="">Netlify</h3>
         </Link>
         
-        <Link className={'border-none'} img={<Telefon />} href={"tel:+998911430377"}>
+        <Link className={'border-none '} img={<Telefon />} href={"tel:+998911430377"}>
           <h3 className="">Telefon</h3>
         </Link>
 

@@ -171,11 +171,114 @@ const LiberData = [
   }
 ]
 
+const GamesData = [
+  {
+    id:1,
+    text: "html"
+  },
+  {
+    id:2,
+    text: "css"
+  },
+  {
+    id:3,
+    text: "javascript"
+  }
+]
+
+const OrganicData = [
+  {
+    id:1,
+    text: "react"
+  },
+  {
+    id:2,
+    text:"react-dom"
+  },
+  {
+    id:3,
+    text:"react-router-dom"
+  },
+  {
+    id:4,
+    text:"tailwindcss"
+  }
+]
+
+const MyTeamData = [
+  {
+    id:1,
+    text:"vue"
+  },
+  {
+    id:2,
+    text:"aos-animate"
+  },
+  {
+    id:3,
+    text:"sweetalert2"
+  },
+  {
+    id:4,
+    text:"vue-router"
+  }
+]
+
+const AvtovoditelData = [
+  {
+    id:1,
+    text:"aos-animate"
+  },
+  {
+    id:6,
+    text:"vue"
+  },
+  {
+    id:2,
+    text:"axios"
+  },
+  {
+    id:3,
+    text:"@fawmi/vue-google-maps"
+  },
+  {
+    id:4,
+    text:"google-maps-api-loader"
+  },
+  {
+    id:5,
+    text:"sweetalert2"
+  },
+  {
+    id:7,
+    text:"tailwindcss"
+  }
+]
+
+const YangilanishData = [
+  {
+    id:1,
+    text:"vue"
+  },
+  {
+    id:2,
+    text:"sweetalert2"
+  },
+  {
+    id:3,
+    text: "aos-animate"
+  },
+  {
+    id:4,
+    text: "tailwindcss"
+  }
+]
+
 function App() {
   return (
     <div>
       <MainLayout>
-        <section className="px-4 md:px-10 md:py-10 py-5 ">
+        <section id="projects" className="px-4 md:px-10 md:py-10 py-5 ">
           <h2
             className="text-white font-bold text-center mb-10 text-xl md:text-3xl aos-init aos-animate"
             data-aos="fade-up"
@@ -230,88 +333,97 @@ function App() {
             />
           </div>
         </section>
-        {/* 
-        
-       
-        <section
-          id="games"
-          className="flex items-center justify-center gap-20  py-40 border-b-2 "
-        >
-          <div
-            className="aos-init aos-animate"
-            data-aos="fade-right"
+        <section id="games" className="px-4 md:px-10 md:py-10 py-5">
+        <h2
+            className="text-white font-bold text-center mb-10 text-xl md:text-3xl aos-init aos-animate"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <h2 className="text-primary font-bold text-2xl mb-2 text-center">
-              Flappy Bird
-            </h2>
-            <h3 className="text-text fonr-medium text-lg max-w-[300px] mb-5 text-center">
-              html , cssc , javascript yordamida{" "}
-              <span className="text-link">Flappy Bird</span> oyinini yasab
-              korganman , zerikkanda oynab tursa boladi
-            </h3>
-            <div className="flex items-center justify-between mb-10">
-              <Button
-                className={"rounded-md transition hover:translate-x-1"}
-                variant={"primary"}
-              >
-                <a
-                  target="_blank"
-                  href="https://github.com/vproZERO/Flappy-Bird"
-                >
-                  View GitHub
-                </a>
-              </Button>
-              <Button
-                className={"rounded-md transition hover:translate-x-1"}
-                variant={"primary"}
-              >
-                <a target="_blank" href="https://flappybirduz.netlify.app/">
-                  View Netlify
-                </a>
-              </Button>
-            </div>
-            <div className="w-[300px]">
-              <img src={FlappyImg} alt="" />
-            </div>
-          </div>
-          <div
-            className="aos-init aos-animate"
-            data-aos="fade-left"
-            data-aos-duration="1500"
-          >
-            <h2 className="text-primary font-bold text-2xl mb-2 text-center">
-              Flappy Bird
-            </h2>
-            <h3 className="text-text fonr-medium text-lg max-w-[300px] mb-5 text-center">
-              html , cssc , javascript yordamida{" "}
-              <span className="text-link">2048</span> oyinini yasab korganman ,
-              zerikkanda oynab tursa boladi
-            </h3>
-            <div className="flex items-center justify-between mb-10">
-              <Button
-                className={"rounded-md transition hover:translate-x-1"}
-                variant={"primary"}
-              >
-                <a target="_blank" href="https://github.com/vproZERO/2048">
-                  View GitHub
-                </a>
-              </Button>
-              <Button
-                className={"rounded-md transition hover:translate-x-1"}
-                variant={"primary"}
-              >
-                <a target="_blank" href="https://2048gameuz.netlify.app/">
-                  View Netlify
-                </a>
-              </Button>
-            </div>
-            <div className="w-[300px]">
-              <img src={TwoImg} alt="" />
-            </div>
+            Games
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-10">
+          <Card
+              frameworks={GamesData}
+              description={
+                "Html Javascript yordami Flappy Bird oyini yasaganman , laptop va telefonda oynasa boladi"
+              }
+              title={"Flappy Bird"}
+              github={"https://github.com/vproZERO/Flappy-Bird"}
+              netlify={"https://flappybirduz.netlify.app/"}
+              aosData={"fade-right"}
+              aosDuration={"1500"}
+            />
+            <Card
+              frameworks={GamesData}
+              description={
+                "Html Javascript yordami 2048 oyini yasaganman , bu oyinni faqat laptopda oynasa boladi "
+              }
+              title={"2048"}
+              github={"https://github.com/vproZERO/2048"}
+              netlify={"https://2048gameuz.netlify.app/"}
+              aosData={"fade-left"}
+              aosDuration={"1500"}
+            />
           </div>
         </section>
-        */}
+        <section id="landing" className="px-4 md:px-10 md:py-10 py-5">
+        <h2
+            className="text-white font-bold text-center mb-10 text-xl md:text-3xl aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            Landing Pages
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-10">
+          <Card
+              frameworks={OrganicData}
+              description={
+                "React yordamida qilingan Landing page "
+              }
+              title={"Organic"}
+              github={"https://github.com/vproZERO/organic"}
+              netlify={"https://eco-organick.netlify.app/"}
+              aosData={"fade-right"}
+              aosDuration={"1500"}
+            />
+            <Card
+              frameworks={MyTeamData}
+              description={
+                "Html Javascript yordami 2048 oyini yasaganman , bu oyinni faqat laptopda oynasa boladi "
+              }
+              title={"2048"}
+              github={"https://github.com/vproZERO/myteam"}
+              netlify={"https://mening-komandam.netlify.app/"}
+              aosData={"fade-left"}
+              aosDuration={"1500"}
+            />
+
+<Card
+              frameworks={AvtovoditelData}
+              description={
+                "Vue yordamida qilingan Landing page "
+              }
+              title={"Avtovoditel"}
+              github={"https://github.com/vproZERO/avtovoditel"}
+              netlify={"https://avto-voditel.netlify.app/"}
+              aosData={"fade-right"}
+              aosDuration={"1500"}
+            />
+            <Card
+              frameworks={YangilanishData}
+              description={
+                "Vue yordamida qilingan Landing page "
+              }
+              title={"2048"}
+              github={"https://github.com/vproZERO/yangilanish"}
+              netlify={"https://shaxnoza-siddiqova.netlify.app/"}
+              aosData={"fade-left"}
+              aosDuration={"1500"}
+            />
+          </div>
+        </section>
       </MainLayout>
     </div>
   );
