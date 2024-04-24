@@ -326,9 +326,9 @@ function App() {
     <div>
       <MainLayout>
         <section id="tech" className="px-4 md:px-10 md:py-10 py-5 ">
-          <div className="grid grid-cols-3 md:grid-cols-5 md:gap-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 md:gap-5 gap-3">
             {TechData.map((item) => (
-              <div key={item.id} className="md:w-[120px] w-[40px] mx-auto aos-init aos-animate" data-aos={item.id % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration={"1500"}>
+              <div key={item.id} className="md:w-[120px] w-[60px] mx-auto aos-init aos-animate" data-aos={item.id % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration={"1500"}>
                   <img className="object-contain" src={item.text} alt="img" />
               </div>
             ))}
