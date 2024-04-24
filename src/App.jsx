@@ -373,7 +373,7 @@ function App() {
             <Card
               frameworks={AdminData}
               description={
-                "admin page , get , delete , edit , post , hamasi ishlidi , backendini qolda json-server da yozib chiqanman , verlceda turadi backend , edit qilganda eski qiymatlari ham turadi inputda invalidateValue bolib , buttonlar reusable , json-server-auth dan foydalanmoqchidm admin login uchun lekn VERCEL da json-server-auth ishlamidi ekan , zod ishlatkanman , "
+                "admin page , get , delete , edit , post , hamasi ishlidi , backendini qolda json-server da yozib chiqanman , lichkaga yozsangiz zip faylini tashab beraman ishlatib korasz , edit qilganda eski qiymatlari ham turadi inputda invalidateValue bolib , buttonlar reusable , json-server-auth dan foydalanmoqchidm admin login uchun lekn VERCEL da json-server-auth ishlamidi ekan , zod ishlatkanman , "
               }
               title={"Admin Page"}
               github={"https://github.com/vproZERO/adminka"}
